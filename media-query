@@ -1,0 +1,74 @@
+@media screen and (min-width: 768px) and (max-width: 992px ) {
+    /* TAMANHO DO TABLET */
+    .area-login{
+        width: 90vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 40px;
+
+        
+    }
+
+    .login{
+        float: right;
+        width: 90vw;
+        align-items: flex-start;
+    }
+
+    .login input{
+        width: 45%;
+    }
+
+    form [type="submit"]{
+        display: block;
+        background-color: darkslateblue;
+        font-size: 15px;
+        font-weight: bold; 
+        cursor: pointer; 
+        width: 46.5%; 
+        margin-top: 10px;
+    }
+    
+    form [type="submit"]:hover{
+        background-color: rgb(106, 98, 161);
+    }
+    
+}
+
+@media screen and (min-width: 992px){
+    /* TAMANHO DESKTOP */
+    .area-login{
+        width: 100vw;
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+    }
+    
+    .login{
+        float: right;
+        width: 75vw;
+        align-items: flex-start;
+    }
+
+    .login input{
+        width: 45%;
+    }
+
+    form [type="submit"]{
+        display: block;
+        background-color: darkslateblue;
+        font-size: 15px;
+        font-weight: bold; 
+        cursor: pointer; 
+        width: 46.5%; 
+        margin-top: 10px;
+    }
+    
+    form [type="submit"]:hover{
+        background-color: rgb(106, 98, 161);
+    }
+}
