@@ -1,0 +1,59 @@
+body{
+    background-color: #1B1F27;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+section{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.botão{
+    background-color: #181920;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 35px;
+    border-radius: 25px;
+}
+
+h2{
+    font-size: 23px;
+    color: aliceblue;
+}
+
+ button{
+    /* customização e pociosionamento do botão */
+    height: 70px;
+    width: 240px;
+    border-radius: 30px;
+    outline: 2px solid darkslateblue;
+    outline-offset: 1px;
+    cursor: pointer;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+ }
+
+.usuario{
+    margin-top: 50px;
+}
+
+a{
+    font-size: 20px;
+    font-weight: bold; 
+    text-decoration: none;
+}
