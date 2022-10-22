@@ -10,25 +10,45 @@ html{
     font-family: 'poppins', sans-serif;
 }
 
+body::-webkit-scrollbar{
+    width: 0px;
+}
+
 body{
     height: 100vh;
     min-width: 100vw;
-    overflow-y: hidden;
     overflow-x: hidden;
     box-sizing: border-box;
+    scrollbar-width: 0px;
+}
 
-    
+#div-flex{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
 }
 
 
 /* AQUI COMEÇA O MENU DE NAVEGAÇÃO DE CIMA */
-.menu-cima{
-    position: absolute;
-    background-color: aquamarine;
-    width: 100%;
-    height: 70px;
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: gray;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 60px;
+    min-height: 60px;
+    padding: 0 16px;
+    width: 100%;
+
 }
+
+
 
 .menu-cima ul{
     display: flex;
@@ -36,19 +56,18 @@ body{
 }
 
 .menu-cima ul li{
-    position: relative;
-    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 70px;
-    height: 70px;
+    height: 60px;
     z-index: 1;
 }
 
 
 
 .menu-cima ul li a .icon{
-    position: relative;
-    display: block;
-    line-height: 75px;
+    line-height: 60px;
     font-size: 1.5em;
     text-align: center;
     transition: 0.5s;
@@ -56,15 +75,28 @@ body{
 }
 
 
+/* conteudo da pagina (main)*/
+
+#div-flex main{
+    flex: 1;
+    background: #f3f3f3;
+    padding: 60px 0 ;
+}
 
 /* ROLAGEM DO DESTAQUE */
+ 
+.swiffy-slider{
+    display: flex;
+    align-items: center;
 
-
+}
 
 /* AQUI COMEÇA O MENU DE NAVEGAÇÃO DE BAIXO */
 .menu-celular-baixo{
-    position: absolute;
-    bottom: 0%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
     width: 100vw;
     height: 70px;
     background: grey;
