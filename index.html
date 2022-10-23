@@ -17,35 +17,77 @@
     <!-- menu com logo, search e barra de menu  -->
     <div id="div-flex">
         <header>
-            <div class="menu-cima">
-                <ul>
-                    <div class="barra-menu">
-                        <li>
-                            <a href="#">
-                                <span class="icon">
-                                    <ion-icon name="reorder-three-outline"></ion-icon>
-                                </span>
-                            </a>
-                        </li>
+            <!-- <div class="menu-cima"> -->
+                
+            <nav class="menu-cima">
+                <div class="logo">
+                    <a href="#">
+                        <span class="icon"></span>
+                    </a>
+                </div>
+                <div class="pesquisar">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="search-outline"></ion-icon>
+                        </span>
+                    </a>
+                </div>
+                <div class="user-perfil">
+                    <span class="icon">
+                        <ion-icon name="person-circle-outline" onclick="AparecerMenu()"></ion-icon>
+                    </span>        
+                </div>
+
+                <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-menu">
+
+                        <!-- usuario informações e foto de perfil -->
+                        <div class="user-info">
+                            <!-- Aqui vai a imagem do usuario -->
+                            <ion-icon class="icon-style"  name="person-circle-outline"></ion-icon>
+                            <h2>User_name</h2>
+                        </div>
+                        <hr>
+
+                        <a href="#" class="sub-menu-link">
+                            <ion-icon class="icon-style"  name="person"></ion-icon>
+                            <p>Perfil</p>
+                            <span>></span>
+                        </a>
+
+
+                        <a href="#" class="sub-menu-link">
+                            <ion-icon class="icon-style"  name="bookmark-outline"></ion-icon>
+                            <p>Salvos</p>
+                            <span>></span>
+                        </a>
+
+
+                        <a href="#" class="sub-menu-link">
+                            <ion-icon class="icon-style"  name="help-circle-outline"></ion-icon>
+                            <p>Ajuda</p>
+                            <span>></span>
+                        </a>
+
+
+                        <a href="#" class="sub-menu-link">
+                            <ion-icon class="icon-style"  name="settings"></ion-icon>
+                            <p>Configuração</p>
+                            <span>></span>
+                        </a>
+
+
+                        <a href="#" class="sub-menu-link">
+                            <ion-icon class="icon-style" name="exit"></ion-icon>
+                            <p>Sair</p>
+                            <span>></span>
+                        </a>
+
                     </div>
-                    <div class="logo">
-                        <li>
-                            <a href="#">
-                                <span class="icon"></span>
-                            </a>
-                        </li>
-                    </div>
-                    <div class="pesquisar">
-                        <li>
-                            <a href="#">
-                                <span class="icon">
-                                    <ion-icon name="search-outline"></ion-icon>
-                                </span>
-                            </a>
-                        </li>
-                    </div>
-                </ul>
-            </div>
+                </div>
+            </nav>
+                
+            <!-- </div> -->
         </header>
         
         
@@ -120,7 +162,20 @@
         </div>
     </div>
 
+    <!-- sub menu -->
+    <script>
+        let subMenu = document.getElementById("subMenu")
 
+        function AparecerMenu(){
+            subMenu.classList.toggle("open-menu")
+        }
+
+
+    </script>
+
+
+
+    <!-- Menu de navegação baixo javascript -->
     <script>
         const lista = document.querySelectorAll('.lista');
         function activelink(){
