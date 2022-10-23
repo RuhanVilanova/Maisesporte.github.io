@@ -25,6 +25,7 @@ body{
 #div-flex{
     display: flex;
     height: 100vh;
+    min-height: 100vh;
     flex-direction: column;
 }
 
@@ -39,39 +40,118 @@ header{
     background-color: gray;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 
     height: 60px;
     min-height: 60px;
-    padding: 0 16px;
     width: 100%;
 
 }
 
-
-
-.menu-cima ul{
-    display: flex;
-    width: 350px;
-}
-
-.menu-cima ul li{
+.menu-cima{
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 70px;
-    height: 60px;
-    z-index: 1;
+    justify-content: space-between;
+    padding: 10px 10%;
+    width: 100%;
 }
 
+.user-perfil{
+    width: 60px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-left: 30px;
+    
+}
 
-
-.menu-cima ul li a .icon{
+.menu-cima a .icon{
     line-height: 60px;
     font-size: 1.5em;
-    text-align: center;
-    transition: 0.5s;
     color: white;
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+/* sub menu com informações ETC */
+
+.sub-menu-wrap{
+    position: absolute;
+    top: 100%;
+    right: 10%;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.sub-menu-wrap.open-menu{
+    max-height: 400px;
+}
+
+.sub-menu{
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+}
+
+.user-info{
+    display: flex;
+    align-items: center;
+}
+
+.user-info h3{
+    font-weight: 500;
+}
+
+/* Aqui vai a imagem da pessoa em css */
+.user-info ion-icon{
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 35px;
+}
+
+.sub-menu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0 10px;
+}
+
+.sub-menu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 12px 0;
+    font-size: 20px;
+}
+
+.sub-menu-link p{
+    width: 100%;
+}
+
+.sub-menu-link .icon-style{
+    background: #e5e5e5;
+    border-radius: 50%;
+    width: 25px;
+    height: 15px;
+    padding: 8px;
+    margin-right: 10px;
+    margin-left: 15px;
+}
+
+.sub-menu-link span{
+    font-size: 19px;
+    transition: trasnform 0.5s;
+}
+
+.sub-menu-link:hover span{
+    transform: translateX(5px);
+}
+
+.sub-menu-link:hover p{
+    font-weight: 600;
 }
 
 
