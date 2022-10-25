@@ -37,7 +37,7 @@ header{
     top: 0;
     left: 0;
     right: 0;
-    background-color: gray;
+    background-color: #f6f6f6;
     display: flex;
     align-items: center;
 
@@ -52,8 +52,14 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 10%;
+    padding: 0 3%;
     width: 100%;
+    height: 60px;
+}
+
+.menu-cima .logo img{
+    width: 125px;
+    height: auto;
 }
 
 .user-perfil{
@@ -72,12 +78,17 @@ header{
     margin: 10px 20px;
 }
 
+.user-perfil{
+    font-size: 20px;
+    width: 18px;
+}
+
 /* sub menu com informações ETC */
 
 .sub-menu-wrap{
     position: absolute;
-    top: 100%;
-    right: 10%;
+    top: 75%;
+    right: -2%;
     width: 320px;
     max-height: 0px;
     overflow: hidden;
@@ -168,126 +179,73 @@ header{
  
 .swiffy-slider{
     display: flex;
+    justify-content: center;
     align-items: center;
+    
 
 }
 
-/* AQUI COMEÇA O MENU DE NAVEGAÇÃO DE BAIXO */
-.menu-celular-baixo{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+/* DEstaques */
+
+body{
+    margin: 0;
+    height: 100vh;
     width: 100vw;
-    height: 70px;
-    background: grey;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
 }
 
-.menu-celular-baixo ul{
-    display: flex;
-    width: 350px;
-}
-
-.menu-celular-baixo ul li{
-    position: relative;
-    list-style: none;
-    width: 70px;
-    height: 70px;
-    z-index: 1;
-}
-
-.menu-celular-baixo ul li a{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    font-weight: 500;
-}
-
-.menu-celular-baixo ul li a .icon{
-    position: relative;
-    display: block;
-    line-height: 75px;
-    font-size: 1.5em;
-    text-align: center;
-    transition: 0.5s;
-    color: white;
-}
-
-.menu-celular-baixo ul li.active a .icon{
-    transform: translatey(-32px);
-}
-
-.menu-celular-baixo ul li a .text{
+.categoria{
     position: absolute;
-    color: white;
-    font-weight: 400;
-    font-size: 0.75em;
-    letter-spacing: 0.05em;
-    transition: 0.5s;
-    opacity: 0;
-    transform: translateY(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e61875;
+    height: 40px;
+    padding: 10px;
+    border-radius: 40px;
+
+    font-size: 40px;
 }
 
-.menu-celular-baixo ul li.active a .text{
-    opacity: 1;
-    transform: translateY(10px);
+.gambiarra{
+    overflow: hidden;
 }
 
-.indicador{
-    position: absolute;
-    top: -50%;
-    width: 70px;
-    height: 70px;
-    background: lime;
+.categoria-txt {
+    display: flex;
+    align-items: center;
+
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: #000000;
+    font-size: 40px;
+    width: 0;
+    transition: .2s;
+
+    max-height: 400px;
+    
+    transition: max-height 0.5s;
+}
+
+.categoria-txt.open-menu{
+    max-height: 400px;
+}
+
+
+
+.categoria-icone{
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    border: 6px solid white;
-    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.indicador::before{
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: -22px;
-    width: 20px;
-    height: 20px;
-    background-color: transparent;
-    border-top-right-radius: 20px;
-    box-shadow: 0px -10px 0 0 white; 
-}
-
-.indicador::after{
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: -22px;
-    width: 20px;
-    height: 20px;
-    background-color: transparent;
-    border-top-left-radius: 20px;
-    box-shadow: 0px -10px 0 0 white; 
-}
-
-.menu-celular-baixo ul li:nth-child(2).active ~ .indicador{
-    transform: translatex(calc(70px * 1));
-}
-
-.menu-celular-baixo ul li:nth-child(3).active ~ .indicador{
-    transform: translatex(calc(70px * 2));
-}
-
-.menu-celular-baixo ul li:nth-child(4).active ~ .indicador{
-    transform: translatex(calc(70px * 3));
-}
-
-.menu-celular-baixo ul li:nth-child(5).active ~ .indicador{
-    transform: translatex(calc(70px * 4));
+.categoria:hover > .gambiarra{
+    overflow: auto;
+    width: 1000px;
+    
+    padding: 0 6px;
 }
