@@ -12,29 +12,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     
-     <script>
-        function validarSenha() {
-            const senha = document.querySelector('input[name=senha]');
-            const senha2 = document.querySelector('input[name=senha2]');
-            if (senha.value === senha2.value) {
-                senha2.setCustomValidity('');
-                return true;
-            } else {
-                senha2.setCustomValidity("Senhas diferentes!");
-                senha2.reportValidity();
-                return false;
-            }
-        }
-    </script>
 </head>
 <body>
     <section class="area-login">
-        <div class="logo">
-            <img src="" alt=""> <!-- LOGO -->
-        </div>
         <div class="login">
+                <div class="logo">
+                        <img src="Z:\TCA\imagens\logo-menor.png" alt="Logo"> <!-- LOGO -->
+                </div>
             <form>
-                <div class="cor-logo"></div>
+                
                 <label for="nome">Nome</label>
                 <input class="nome" type="text" name="nome" placeholder="Seu Nome" autofocus autocomplete="username" maxlength="40" required>
 
@@ -49,8 +35,25 @@
 
                 <input type="submit" value="Entrar" onclick="return validarSenha()">
             </form>
-            <p>Ja tenho uma conta.<a href="https://ruhanvilanova.github.io/Maisesporte.github.io/html-cadastro/index.html">Login</a></p>
+            <p>Já tenho uma conta.<a href="https://ruhanvilanova.github.io/Maisesporte.github.io/html-cadastro/index.html">Login</a></p>
         </div>
     </section>
+
+
+    <script>
+        function validarSenha() {
+            const senha = document.querySelector('input[name=senha]');
+            const senha2 = document.querySelector('input[name=senha2]');
+            if (senha.value === senha2.value) {
+                senha2.setCustomValidity('');
+                return true;
+            } else {
+                senha2.setCustomValidity("Senhas diferentes!");
+                senha2.reportValidity();
+                return false;
+            }
+        }
+    </script>
+    
 </body>
 </html>
