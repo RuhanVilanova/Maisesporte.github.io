@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="publication.css">
+
+    <title>+SportSp</title>
+</head>
+<body>
+    <div id="div-flex">
+        <header>
+            <nav class="menu-cima">
+                <div class="logo">
+                    <a href="Z:\TCA\homepage\index.html">
+                        <img src="Z:\TCA\imagens\logo-menor.png" alt="Logo">
+                    </a>
+                </div>
+                
+
+                <div class="menu-alinhamento">
+
+                    <div class="user-perfil">
+                        <span class="icon">
+                            <ion-icon name="ellipsis-vertical-outline" onclick="AparecerMenu()"></ion-icon>
+                        </span>        
+                    </div>
+
+
+                </div>
+
+
+                
+                
+
+                <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-menu">
+
+                        <!-- usuario informações e foto de perfil -->
+                        <div class="user-info">
+                            <!-- Aqui vai a imagem do usuario -->
+                            <ion-icon class="icon-style"  name="person-circle-outline"></ion-icon>
+                            <h2>User_name</h2>
+                        </div>
+                        <hr>
+
+                        <a href="#" class="sub-menu-link">
+                            <ion-icon class="icon-style"  name="person"></ion-icon>
+                            <p>Perfil</p>
+                            <span>></span>
+                        </a>
+
+
+                        <a href="#" class="sub-menu-link">
+                            <ion-icon class="icon-style"  name="bookmark-outline"></ion-icon>
+                            <p>Salvos</p>
+                            <span>></span>
+                        </a>
+
+
+                        <a href="#" class="sub-menu-link">
+                            <ion-icon class="icon-style"  name="help-circle-outline"></ion-icon>
+                            <p>Ajuda</p>
+                            <span>></span>
+                        </a>
+
+
+                        <a href="#" class="sub-menu-link">
+                            <ion-icon class="icon-style"  name="settings"></ion-icon>
+                            <p>Configuração</p>
+                            <span>></span>
+                        </a>
+
+
+                        <a href="#" class="sub-menu-link">
+                            <ion-icon class="icon-style" name="exit"></ion-icon>
+                            <p>Sair</p>
+                            <span>></span>
+                        </a>
+
+                    </div>
+                </div>
+            </nav>
+            
+        </header>
+    
+
+        <main>
+            <div class="publi-img">
+                <div class="add-img" id="add-image">
+                    <h2>Adicione uma foto</h2>
+                    <ion-icon class="icon" name="camera-outline"></ion-icon>
+                    
+                    <input type="file" name="imagem-publi" id="imagem-publi">
+                
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        let photo = document.getElementById('add-image');
+            let file = document.getElementById('imagem-publi');
+
+            photo.addEventListener('click', () => {
+                file.click();
+            });
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
