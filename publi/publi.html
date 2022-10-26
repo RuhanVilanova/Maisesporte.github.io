@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="publi.css">
+
+    <title>+SportSp</title>
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <div class="publi-img">
+            <div class="add-img" id="add-image">
+                <h2>Adicione uma foto</h2>
+                
+                <input type="file" name="imagem-publi" id="imagem-publi">
+            
+            </div>
+        </div>
+    </main>
+
+    <script>
+        let photo = document.getElementById('add-image');
+            let file = document.getElementById('imagem-publi');
+
+            photo.addEventListener('click', () => {
+                file.click();
+            });
+    </script>
+</body>
+</html>

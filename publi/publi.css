@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
+    flex: 1;
+    background: #f3f3f3;
+    padding: 60px 0 0 0;
+}
+
+.publi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-img{
+    display: grid;
+    place-items: center;
+    background-color: rgb(26, 255, 0);
+    width: 85%;
+    height: 220px;
+
+}
+
+.add-img input[type="file"]{
+    display: none;
+    visibility: h;
+    
+}
