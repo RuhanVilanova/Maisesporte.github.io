@@ -204,16 +204,13 @@ header{
 
 
 .botao-locais{
-    width: 100vh;
-    display: flex;
-    justify-items: center;
-    align-items: center;
+   width: 100%;
+   margin-top: 20px;
 }
 
 .botao-locais span{
-    display: flex;
-    justify-items: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
 
 }
 
@@ -223,13 +220,18 @@ header{
     justify-items: center;
     align-items: center;
 
-    background-color: #c8815f;
+    background-color: #fa459a;
     padding: 1rem 3rem 1rem 3rem;
     border-radius: 5px;
-    color: #fff;
+    color: white;
     font-size: 1rem;
     cursor: pointer;
     transition: 0.3s;
+    outline: none;
+    border-color: #fa459a;
+    border: none;
+
+    font-weight: 550;
 }
 
 .botao-locais button :hover{
