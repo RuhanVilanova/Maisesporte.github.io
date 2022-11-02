@@ -4,72 +4,130 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device, initial-scale=1.0">
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+   
 
-<!--Font awamesome-->
-    <link rel="stylesheet"
-    ref="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
 <!--CSS-->
-    <link rel="stylesheet" href="perfil2.css">
+    <link rel="stylesheet" href="https://ruhanvilanova.github.io/Maisesporte.github.io/Perfil/Empresa/profile.css">
+
     <title>+Sports</title>
 </head>
 <body>
-    <div class="container">
-        <div class="profile-card">
-            
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvcsjy9htmAEFL6bw8-3gLRQvFFSlvTwIWGQ&usqp=CAU"
-             class="cover-pic">
-
-            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" 
-            class="profile-pic">
-
-            
-
-            <h1>João Victor</h1>
-            <p>Perfil Pessoal</p>
-            <a href="#" class="seguir"> Editar Perfil</a>
-
-           <!--codigos das descrições do perfil-->
-            <div class="icones">
-
-                    <a href="#" class="icones"> 
-                        <ion-icon name="logo-twitter"></ion-icon></a>
-                        
-                    <a href="#" class="icones"> 
-                        <ion-icon name="logo-instagram"></ion-icon></a>
-
-                    <a href="#" class="icones">
-                        <ion-icon name="logo-facebook"></ion-icon></a>
-
-            </div>
-
-            <div class="row">
-                <div>
-                    <p>Seguidores</p>
-                    <h2>0</h2>
+    <div id="div-flex">
+        <header>
+            <nav class="menu-cima">
+                <div class="logo">
+                    <a href="Z:\TCA\homepage\index.html">
+                        <img src="https://ruhanvilanova.github.io/Maisesporte.github.io/imagens/logo-menor.png" alt="Logo">
+                    </a>
                 </div>
-            <div>
-                <p>Seguindo</p>
-                <h2>0</h2>
+        
+                <div class="menu-alinhamento">
+                    <div class="user-perfil">
+                        <span class="icon">
+                            <ion-icon name="ellipsis-vertical" onclick="AparecerMenu()"></ion-icon>
+                        </span>
+                    </div>
+                    <div class="sub-menu-wrap" id="subMenu">
+                        <div class="sub-menu">
+                            <!-- usuario informações e foto de perfil -->
+                            <div class="user-info">
+                                <!-- Aqui vai a imagem do usuario -->
+                                <ion-icon class="icon-style"  name="person-circle-outline"></ion-icon>
+                                <h2>User_name</h2>
+                            </div>
+                            <hr>
+                            <a href="#" class="sub-menu-link">
+                                <ion-icon class="icon-style"  name="person"></ion-icon>
+                                <p>Perfil</p>
+                                <span>></span>
+                            </a>
+                            <a href="#" class="sub-menu-link">
+                                <ion-icon class="icon-style"  name="bookmark"></ion-icon>
+                                <p>Salvos</p>
+                                <span>></span>
+                            </a>
+                            <a href="#" class="sub-menu-link">
+                                <ion-icon class="icon-style"  name="help-circle-outline"></ion-icon>
+                                <p>Ajuda</p>
+                                <span>></span>
+                            </a>
+                            <a href="#" class="sub-menu-link">
+                                <ion-icon class="icon-style"  name="settings"></ion-icon>
+                                <p>Configuração</p>
+                                <span>></span>
+                            </a>
+                            <a href="#" class="sub-menu-link">
+                                <ion-icon class="icon-style" name="exit"></ion-icon>
+                                <p>Sair</p>
+                                <span>></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                <div class="profile-card">
+        
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvcsjy9htmAEFL6bw8-3gLRQvFFSlvTwIWGQ&usqp=CAU"
+                     class="cover-pic">
+                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                    class="profile-pic">
+        
+                    <h1>João Victor</h1>
+                    <p>Perfil Pessoal</p>
+                    <a href="#" class="seguir"> Editar Perfil</a>
+                   <!--codigos das descrições do perfil-->
+                    <div class="icones">
+                            <a href="#" class="icones">
+                                <ion-icon name="logo-twitter"></ion-icon></a>
+        
+                            <a href="#" class="icones">
+                                <ion-icon name="logo-instagram"></ion-icon></a>
+                            <a href="#" class="icones">
+                                <ion-icon name="logo-facebook"></ion-icon></a>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <p>Seguidores</p>
+                            <h2>0</h2>
+                        </div>
+                    <div>
+                        <p>Seguindo</p>
+                        <h2>0</h2>
+                    </div>
+                    <div>
+                        <p>Postagens</p>
+                        <h2>0</h2>
+                    </div>
+                    </div>
+                    <a href="https://ruhanvilanova.github.io/Maisesporte.github.io/publica/publication.html"
+                    class="view-btn">Publique</a>
+                    <!--codigos da photo da time line-->
+                    <div class="photos">
+                        <img src="https://pbs.twimg.com/media/EEcDUycX4AAf8NW?format=jpg&name=large"
+                         alt="">
+                    </div>
+                </div>
             </div>
-            <div>
-                <p>Postagens</p>
-                <h2>0</h2>
-            </div>    
-            </div>
-            <a href="https://ruhanvilanova.github.io/Maisesporte.github.io/publica/publication.html" 
-            class="view-btn">Publique</a>  
-
-            <!--codigos da photo da time line-->
-            <div class="photos">
-                <img src="https://pbs.twimg.com/media/EEcDUycX4AAf8NW?format=jpg&name=large"
-                 alt="">
-            </div>
-        </div>
+        </main>
+        
     </div>
-    
 
+    <!-- sub menu -->
+    <script>
+        let subMenu = document.getElementById("subMenu")
+
+        function AparecerMenu(){
+            subMenu.classList.toggle("open-menu")
+        }
+
+    </script>
+
+    <!-- ACESSO icones -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
 </body>
 </html>
