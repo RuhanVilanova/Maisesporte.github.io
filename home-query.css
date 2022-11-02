@@ -1,0 +1,10 @@
+@media screen and (min-width: 768px) and (max-width: 992px ) {}
+
+@media screen and (min-width: 992px){
+    nav.menu-cima .menu-alinhamento .search-icon{
+        display: none;
+    }
+    nav.menu-cima .menu-alinhamento form{
+        display: flex;
+    }
+}
