@@ -17,87 +17,80 @@
     <!-- menu com logo, search e barra de menu  -->
     <div id="div-flex">
         <header>
-            <!-- <div class="menu-cima"> -->
-                
             <nav class="menu-cima">
                 <div class="logo">
                     <a href="Z:\TCA\homepage\index.html">
-                        <img src="Z:\TCA\imagens\logo-menor.png" alt="Logo">
+                        <img src="https://ruhanvilanova.github.io/Maisesporte.github.io/imagens/logo-menor.png" alt="Logo">
                     </a>
                 </div>
-                
-                                <div class="search-icon">
-                    <span class="icon">
-                        <ion-icon name="search-outline" onclick="AparecerSearch()"></ion-icon>
-                    </span>        
-                </div>
+                    
 
-                <!-- search barra -->
-                <div class="sub-menu-wrap" id="search">
-                    <div class="sub-menu">
-                        <input type="text" placeholder="Pesquisar">
-                        <span><ion-icon name="search-outline"></ion-icon></span>
+                <div class="menu-alinhamento">
+
+
+                    <div class="search-icon"><span class="fa-search"><ion-icon name="search"></ion-icon></span></div>
+                    <div class="cancel-icon"><span class="fa-times"><ion-icon name="close"></ion-icon></span></div>
+                    <form id="form-search" action="#">
+                        <input type="search" class="search-data" placeholder="Pesquisar" required> 
+                        <button type="submit" class="fa-search"><ion-icon name="search"></ion-icon></button>
+                    </form>
+
+
+                    <div class="user-perfil">
+                        <span class="icon">
+                            <ion-icon name="ellipsis-vertical" onclick="AparecerMenu()"></ion-icon>
+                        </span>        
                     </div>
-                </div>
 
-                <div class="user-perfil">
-                    <span class="icon">
-                        <ion-icon name="ellipsis-vertical-outline" onclick="AparecerMenu()"></ion-icon>
-                    </span>        
-                </div>
+                    <div class="sub-menu-wrap" id="subMenu">
+                        <div class="sub-menu">
 
-                <div class="sub-menu-wrap" id="subMenu">
-                    <div class="sub-menu">
+                            <!-- usuario informações e foto de perfil -->
+                            <div class="user-info">
+                                <!-- Aqui vai a imagem do usuario -->
+                                <ion-icon class="icon-style"  name="person-circle-outline"></ion-icon>
+                                <h2>User_name</h2>
+                            </div>
+                            <hr>
 
-                        <!-- usuario informações e foto de perfil -->
-                        <div class="user-info">
-                            <!-- Aqui vai a imagem do usuario -->
-                            <ion-icon class="icon-style"  name="person-circle-outline"></ion-icon>
-                            <h2>User_name</h2>
+                            <a href="#" class="sub-menu-link">
+                                <ion-icon class="icon-style"  name="person"></ion-icon>
+                                <p>Perfil</p>
+                                <span>></span>
+                            </a>
+
+
+                            <a href="#" class="sub-menu-link">
+                                <ion-icon class="icon-style"  name="bookmark"></ion-icon>
+                                <p>Salvos</p>
+                                <span>></span>
+                            </a>
+
+
+                            <a href="#" class="sub-menu-link">
+                                <ion-icon class="icon-style"  name="help-circle-outline"></ion-icon>
+                                <p>Ajuda</p>
+                                <span>></span>
+                            </a>
+
+
+                            <a href="#" class="sub-menu-link">
+                                <ion-icon class="icon-style"  name="settings"></ion-icon>
+                                <p>Configuração</p>
+                                <span>></span>
+                            </a>
+
+
+                            <a href="#" class="sub-menu-link">
+                                <ion-icon class="icon-style" name="exit"></ion-icon>
+                                <p>Sair</p>
+                                <span>></span>
+                            </a>
+
                         </div>
-                        <hr>
-
-                        <a href="#" class="sub-menu-link">
-                            <ion-icon class="icon-style"  name="person"></ion-icon>
-                            <p>Perfil</p>
-                            <span>></span>
-                        </a>
-
-
-                        <a href="#" class="sub-menu-link">
-                            <ion-icon class="icon-style"  name="bookmark-outline"></ion-icon>
-                            <p>Salvos</p>
-                            <span>></span>
-                        </a>
-
-
-                        <a href="#" class="sub-menu-link">
-                            <ion-icon class="icon-style"  name="help-circle-outline"></ion-icon>
-                            <p>Ajuda</p>
-                            <span>></span>
-                        </a>
-
-
-                        <a href="#" class="sub-menu-link">
-                            <ion-icon class="icon-style"  name="settings"></ion-icon>
-                            <p>Configuração</p>
-                            <span>></span>
-                        </a>
-
-
-                        <a href="#" class="sub-menu-link">
-                            <ion-icon class="icon-style" name="exit"></ion-icon>
-                            <p>Sair</p>
-                            <span>></span>
-                        </a>
-
                     </div>
                 </div>
             </nav>
-
-            
-                
-            <!-- </div> -->
         </header>
         
         
@@ -105,11 +98,10 @@
         
         <!-- ROLAGEM DO DESTAQUE -->
         <main>
-
             <h1>Destaques</h1>
             <div class="swiffy-slider">
                 <ul class="slider-container">
-                    <li><img src="https://source.unsplash.com/49b9l_29ceA/1600x900" style="max-width: 100%;height: auto;"></li>
+                    <li><img src="C:\Users\ruhan\Documents\imgs\copa-camisa-menor.jpg" style="min-width: 100%; max-width: 100%;height: auto;"></li>
                     <li><img src="https://source.unsplash.com/nKAglN6HBH8/1600x900" style="max-width: 100%;height: auto;"></li>
                     <li><img src="https://source.unsplash.com/E9ZwWcMGzj8/1600x900" style="max-width: 100%;height: auto;"></li>
                 </ul>
@@ -122,60 +114,101 @@
                 </div>
             </div>
 
+            <!-- <div class="botao-locais">
+                <nav>
+                    <button>
+                        Divulgue Aqui!
+                    </button>
+                </nav>
+            </div> -->
+            <div class="botao-locais">
+                <nav>
+                    <a href="#" class="myButton">Divulgue Aqui!</a>
+                </nav>
+            </div>
+
+            <!-- PUBLICAÇÕES DAS PESSOAS -->
+            
+            <div class="publication">
+                <nav>
+                    <div class="barra-publi-cima">
+                        <div class="person">
+                            <ion-icon class="icon-style"  name="person-circle-outline"></ion-icon>
+                            <h2>User_name</h2>
+                        </div>
+                    </div>
+
+                    <div class="img-produto">
+                        <img src="https://vejasp.abril.com.br/wp-content/uploads/2017/11/capa2.jpg" alt="Produto">
+
+                        <div class="txt-produto">
+                            <h3>Kichute</h3>
+                        </div>
+                    </div>
+                    
+
+                    <div class="barra-publi-baixo">
+                        <div class="interact-icon">
+
+                            <div class="interact-esquerda">
+                                <ion-icon name="heart-outline"></ion-icon>
+                                <ion-icon name="chatbubble-sharp"></ion-icon>
+                            </div>
+                            <ion-icon name="bookmark"></ion-icon>
+                            
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
 
             <div class="menu-map">
                 <a href="#">
                     <span class="icon-map">
-                        <ion-icon name="earth-outline"></ion-icon>
+                        <ion-icon name="earth"></ion-icon>
                     </span>
                 </a>
             </div>
-
-
-            
-        
-
-            
         </main>
+    </div>
 
-        <!-- <a href="#">
-            <span class="icon">
-                <ion-icon name="earth-outline"></ion-icon>
-            </span>
-            <span class="text">Mapa</span>
-        </a> -->
-               
+    <!-- ABRIR search -->
+    <Script>
+        const searchBtn = document.querySelector(".search-icon")
+        const cancelBtn = document.querySelector(".cancel-icon")
+        const form = document.querySelector("#form-search")
+        const menuBtn =  document.querySelector(".user-perfil")
+
+        searchBtn.onclick = ()=>{
+            form.classList.add("active")
+            searchBtn.classList.add("hide")
+            cancelBtn.classList.add("show")
+        }
+        cancelBtn.onclick = ()=>{
+            form.classList.remove("active")
+            searchBtn.classList.remove("hide")
+            cancelBtn.classList.remove("show")
+        }
+        menuBtn.onclick = ()=>{
+            form.classList.remove("active")
+            searchBtn.classList.remove("hide")
+            cancelBtn.classList.remove("show")
+        }
+    </Script>
+ 
 
     <!-- sub menu -->
     <script>
         let subMenu = document.getElementById("subMenu")
-        let search = document.getElementById("search")
 
         function AparecerMenu(){
             subMenu.classList.toggle("open-menu")
         }
 
-        function AparecerSearch(){
-            search.classList.toggle("open-menu")
-        }
-
-
     </script>
 
-
-
-    <!-- Menu de navegação baixo javascript -->
-    <script>
-        const lista = document.querySelectorAll('.lista');
-        function activelink(){
-            lista.forEach((item) => item.classList.remove('active'));
-            this.classList.add('active');
-        }
-        lista.forEach((item) => item.addEventListener('click',activelink))
-    </script>
-    
-
-<!-- para ter acesso aos icones -->
+    <!-- para ter acesso aos icones -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
