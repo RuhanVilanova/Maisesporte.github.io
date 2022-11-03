@@ -25,10 +25,19 @@
                 <label for="senha">Senha</label>
                 <input class="senha" type="password" name="senha" placeholder="Sua Senha" autofocus autocomplete="current-password" required maxlength="20" minlength="8">
 
-                <input type="submit" value="Entrar">
+                <input type="submit" value="Entrar" onclick="redirecionepefil()">
+                
             </form>
             <p>Ainda não tem uma conta?<a href="https://ruhanvilanova.github.io/Maisesporte.github.io/html-cadastro/index.html">Criar conta</a></p>
         </div>
     </section>
+
+    <script>
+    function redirecionepefil() {
+        // Faz um redirecionamento mantendo a página original no histórico de navegaçãodo browser.
+        window.location.href = "https://ruhanvilanova.github.io/Maisesporte.github.io/Perfil/Pessoal/perfill2.html";
+    }
+</script>
+
 </body>
 </html>
