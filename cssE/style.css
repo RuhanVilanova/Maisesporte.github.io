@@ -52,8 +52,9 @@ body{
 
 
 .login input{
-    background-color: #fa459a;
-    /* background-color: #252A34; */
+    background-color: #ed1c4e;
+    /* background-color: #fa459a;
+    background-color: #252A34; */
     border: none;
     height: 40px;
     outline: none;
