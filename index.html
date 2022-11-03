@@ -100,7 +100,6 @@
         
         <!-- ROLAGEM DO DESTAQUE -->
         <main>
-            <h1>Destaques</h1>
             <div class="swiffy-slider">
                 <ul class="slider-container">
                     <li><img src="https://ruhanvilanova.github.io/Maisesporte.github.io/imagens/copa-camisa-menor.jpg" style="min-width: 100%; max-width: 100%;height: auto;"></li>
@@ -116,13 +115,6 @@
                 </div>
             </div>
 
-            <!-- <div class="botao-locais">
-                <nav>
-                    <button>
-                        Divulgue Aqui!
-                    </button>
-                </nav>
-            </div> -->
             <div class="botao-locais">
                 <nav>
                     <a href="#" class="myButton">Divulgue Aqui!</a>
@@ -134,19 +126,89 @@
             <div class="publication">
                 <nav>
                     <div class="barra-publi-cima">
-                        <a href"https://ruhanvilanova.github.io/Maisesporte.github.io/Perfil/Empresa/profile.html">
+                        <a href="https://ruhanvilanova.github.io/Maisesporte.github.io/Perfil/Empresa/profile.html">
                             <div class="person">
-                                <ion-icon class="icon-style"  name="person-circle-outline"></ion-icon>
-                                <h2>User_name</h2>
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfvHzO7pUcMTvGx1ogXp1ZHGI9RtzWyttp6A&usqp=CAU" alt="foto-perfil">
+                                <h2>Nike<ion-icon id="verif-icon" name="checkmark-circle"></ion-icon></h2>
                             </div>
                         </a>
                     </div>
 
                     <div class="img-produto">
-                        <img src="https://vejasp.abril.com.br/wp-content/uploads/2017/11/capa2.jpg" alt="Produto">
+                        <img src="https://imgcentauro-a.akamaihd.net/500x500/96661703A1/tenis-jordan-nike-max-aura-3-masculino-img.jpg" alt="Produto">
 
                         <div class="txt-produto">
-                            <h3>Kichute</h3>
+                            <h3>Tenis jordan nike max aura 3</h3>
+                        </div>
+                    </div>
+                    
+
+                    <div class="barra-publi-baixo">
+                        <div class="interact-icon">
+
+                            <div class="interact-esquerda">
+                                <ion-icon name="heart-outline"></ion-icon>
+                                <ion-icon name="chatbubble-sharp"></ion-icon>
+                            </div>
+                            <ion-icon name="bookmark"></ion-icon>
+                            
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="publication">
+                <nav>
+                    <div class="barra-publi-cima">
+                        <a href="https://ruhanvilanova.github.io/Maisesporte.github.io/Perfil/Empresa/profile.html">
+                            <div class="person">
+                                <img src="data:image/png;base64,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" alt="foto-perfil">
+                                <h2>Skate dos Sonhos<ion-icon id="verif-icon" name="checkmark-circle"></ion-icon></h2>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="img-produto">
+                        <img src="https://static3.tcdn.com.br/img/img_prod/921115/skate_completo_ahead_military_all_pink_3329_1_d99ca1004dc9063366137246c004e44a_20220707164841.jpg" alt="Produto">
+
+                        <div class="txt-produto">
+                            <h3>Skate montado</h3>
+                        </div>
+                    </div>
+                    
+
+                    <div class="barra-publi-baixo">
+                        <div class="interact-icon">
+
+                            <div class="interact-esquerda">
+                                <ion-icon name="heart-outline"></ion-icon>
+                                <ion-icon name="chatbubble-sharp"></ion-icon>
+                            </div>
+                            <ion-icon name="bookmark"></ion-icon>
+                            
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="publication">
+                <nav>
+                    <div class="barra-publi-cima">
+                        <a href="https://ruhanvilanova.github.io/Maisesporte.github.io/Perfil/Empresa/profile.html">
+                            <div class="person">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfvHzO7pUcMTvGx1ogXp1ZHGI9RtzWyttp6A&usqp=CAU" alt="foto-perfil">
+                                <h2>Nike<ion-icon id="verif-icon" name="checkmark-circle"></ion-icon></h2>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="img-produto">
+                        <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/685/231/products/br31-c2b26d46cc40a03cdd16259300049603-1024-1024.jpg" alt="Produto">
+
+                        <div class="txt-produto">
+                            <h3>Camisa seleção brasileira</h3>
                         </div>
                     </div>
                     
