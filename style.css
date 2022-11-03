@@ -469,6 +469,7 @@ nav.menu-cima .menu-alinhamento .cancel-icon.show{
     align-items: center;
     padding: 0 0 0 5px;
     font-size: 15px;
+    justify-content: space-between;
 
     background: #ed1c4db9;
     color: #f6f6f6;
