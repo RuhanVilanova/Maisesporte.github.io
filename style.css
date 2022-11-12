@@ -104,6 +104,7 @@ nav.menu-cima .menu-alinhamento form::after{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    display: flex;
 }
 
 nav.menu-cima .menu-alinhamento form .search-data{
@@ -184,7 +185,7 @@ nav.menu-cima .menu-alinhamento .cancel-icon.show{
 .sub-menu-wrap{
     position: absolute;
     top: 75%;
-    right: -2%;
+    right: 0%;
     width: 320px;
     max-height: 0px;
     overflow: hidden;
@@ -197,7 +198,9 @@ nav.menu-cima .menu-alinhamento .cancel-icon.show{
 
 .sub-menu{
     background: #fff;
-    padding: 20px;
+    border: 2.5px solid #ed1c4e;
+    border-radius: 8px;
+    padding: 10px;
     margin: 10px;
 }
 
@@ -209,8 +212,8 @@ nav.menu-cima .menu-alinhamento .cancel-icon.show{
     align-items: center;
 }
 
-.user-info h3{
-    font-weight: 500;
+.user-info h2{
+    color: #312f88;
 }
 
 
@@ -225,17 +228,21 @@ nav.menu-cima .menu-alinhamento .cancel-icon.show{
     border: 0;
     height: 1px;
     width: 100%;
-    background: #ccc;
+    background: #ed1c4e;
     margin: 15px 0 10px;
 }
 
-.sub-menu-link{
+.sub-menu-link {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #525252;
+    color: #ed1c4e;
     margin: 12px 0;
     font-size: 20px;
+}
+
+.sub-menu-link .icon-style{
+    color: #fff;
 }
 
 .sub-menu-link p{
@@ -243,17 +250,17 @@ nav.menu-cima .menu-alinhamento .cancel-icon.show{
 }
 
 .sub-menu-link .icon-style{
-    background: #e5e5e5;
+    background: #ed1c4e;
     border-radius: 50%;
     width: 25px;
-    height: 15px;
+   
     padding: 8px;
     margin-right: 10px;
     margin-left: 15px;
 }
 
 .sub-menu-link span{
-    font-size: 19px;
+    font-size: 20px;
     transition: trasnform 0.5s;
 }
 
@@ -278,13 +285,7 @@ nav.menu-cima .menu-alinhamento .cancel-icon.show{
     height: 100vh;
 }
 
-.conteudo{
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    flex-direction: column;
-    
-}
+
 
 /* ROLAGEM DO DESTAQUE */
  
